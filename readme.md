@@ -6,9 +6,7 @@ All keybinds can be found in `/Users/brandonlent/.config/nvim/lua/blent/core/key
 
 My leader is: `Space`
 
-
-
-### Command mode 
+### Command mode
 
 | Description                          | Motion                        |
 | ------------------------------------ | :---------------------------- |
@@ -38,6 +36,7 @@ My leader is: `Space`
 | Rename file and update imports       | rf                            |
 | Organize imports                     | oi                            |
 | Remove unused variables              | ru                            |
+| Get git commit                       | Leader + gl                   |
 |                                      |                               |
 
 ### Insert Mode
