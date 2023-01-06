@@ -44,8 +44,6 @@ My leader is: `Space`
 | Description              | Motion          |
 | ------------------------ | --------------- |
 | Navigate code completion | control + j / k |
-|                          |                 |
-|                          |                 |
 
 ### Tmux
 
