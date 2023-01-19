@@ -41,3 +41,6 @@ keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>")
 -- vim gitlink
 keymap.set("n", "<leader>gl", ":GetCommitLink<CR>")
 keymap.set("v", "<leader>gl", ":GetCommitLink<CR>")
+
+-- neotest
+keymap.set("n", "<leader>tw", "<cmd>lua require('neotest').run.run({ jestCommand = 'jest --watch ' })<cr>")
