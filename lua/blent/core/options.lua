@@ -37,4 +37,5 @@ opt.splitbelow = true
 
 opt.iskeyword:append("-,_")
 
-
+-- autoread files
+opt.autoread = true
