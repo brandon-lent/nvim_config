@@ -105,6 +105,9 @@ return packer.startup(function(use)
 	-- vim gitlink
 	use("knsh14/vim-github-link") -- gets git permalink
 
+	-- lazygit
+	use("kdheepak/lazygit.nvim")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

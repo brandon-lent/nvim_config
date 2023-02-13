@@ -61,6 +61,11 @@ lspconfig["html"].setup({
 	on_attach = on_attach,
 })
 
+lspconfig["jedi_language_server"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
 -- configure typescript server with plugin
 typescript.setup({
 	server = {
@@ -83,7 +88,7 @@ lspconfig["emmet_ls"].setup({
 })
 
 -- configure lua server (with special settings)
-lspconfig["sumneko_lua"].setup({
+lspconfig["lua_ls"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 	settings = { -- custom settings for lua
