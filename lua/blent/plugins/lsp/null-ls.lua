@@ -2,10 +2,10 @@ return {
   "jose-elias-alvarez/null-ls.nvim", -- configure formatters & linters
   event = { "BufReadPre", "BufNewFile" },
   config = function()
+    -- import null-ls plugin
     local null_ls = require("null-ls")
 
     local null_ls_utils = require("null-ls.utils")
-
     -- for conciseness
     local formatting = null_ls.builtins.formatting -- to setup formatters
     local diagnostics = null_ls.builtins.diagnostics -- to setup linters
@@ -21,9 +21,7 @@ return {
       sources = {
         --  to disable file types use
         --  "formatting.prettier.with({disabled_filetypes: {}})" (see null-ls docs)
-        formatting.prettier.with({
-          extra_filetypes = { "typescript, typescriptreact" },
-        }), -- js/ts formatter
+        formatting.prettier,
         formatting.stylua, -- lua formatter
         diagnostics.eslint_d.with({ -- js/ts linter
           condition = function(utils)
@@ -41,7 +39,6 @@ return {
             callback = function()
               vim.lsp.buf.format({
                 filter = function(client)
-                  --  only use null-ls for formatting instead of lsp server
                   return client.name == "null-ls"
                 end,
                 bufnr = bufnr,
