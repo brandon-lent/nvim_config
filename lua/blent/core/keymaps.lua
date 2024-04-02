@@ -33,3 +33,6 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer
 
 -- Git link
 keymap.set("x", "<leader>gl", "<cmd>GetCommitLink<CR>")
+
+-- Enable DB UI
+keymap.set("n", "<leader>db", "<cmd>DBUIToggle<CR>")
