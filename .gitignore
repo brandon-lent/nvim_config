@@ -1,0 +1,7 @@
+# Ignore configstore
+configstore/
+
+# Ignore iterm2
+iterm2/
+
+
