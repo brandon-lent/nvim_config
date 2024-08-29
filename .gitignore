@@ -4,4 +4,6 @@ configstore/
 # Ignore iterm2
 iterm2/
 
+# Ignore raycast config file (as it contains tokens)
+raycast/config.json
 
