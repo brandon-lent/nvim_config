@@ -6,7 +6,7 @@
 
 I've found that I'd use the built-in iterm2 tabs and it would get unwieldy at times. Upon learning about Tmux, I felt it'd be useful to organize my terminal sessions per project using [Tmux](https://github.com/tmux/tmux/wiki).
 
-I generally have three sessions opened per project:
+I generally have three panes opened per project:
 1. Server (ie: running a server process such as a dockerized API or Node.js server)
 2. Editor (A neovim editor for the project I'm working in)
 3. Free terminal (to run any commands related to the project)
@@ -14,13 +14,19 @@ I generally have three sessions opened per project:
 My leader key for Tmux is Ctrl + A
 
 
+## Tmuxifier
+
+I use tmuxifier as a way to quickly startup projects in a state that I prefer. For example, what I can do with this tool is:
+1. Create 1 tmux session with 3 different panes all in a directory of my choosing
+2. In the first pane, start up my developer server (ie call a make command that starts up some containers)
+3. In the second pane, open up neovim
 
 
 ## Neovim
 
 ![CleanShot 2024-08-29 at 13 26 15](https://github.com/user-attachments/assets/a58ef521-5bbb-4c19-8fcc-331b624b5e72)
 
-Why: I've been primarily a VScode user in my time as an engineer. I still love using this tool, but I liked the idea of a more light-weight editor directly in my terminal to be able to quickly navigate, copy, and edit code.
+I've been primarily a VScode user in my time as an engineer. I still love using this tool, but I liked the idea of a more light-weight editor directly in my terminal to be able to quickly navigate, copy, and edit code.
 
 I use [Neovim](https://neovim.io/) as a text-editor. My general usage is for quickly finding code, reviewing code live in calls, and doing light editing. I use VSCode primarily
 for feature work. Some nice things about my setup I really like are:
