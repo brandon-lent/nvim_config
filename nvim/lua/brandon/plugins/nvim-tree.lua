@@ -38,7 +38,9 @@ return {
 				},
 			},
 			filters = {
-				custom = { ".DS_Store" },
+				dotfiles = true, -- Hide dot files
+				custom = { ".DS_Store", "__pycache__" },
+				exclude = { ".gitignore" }, -- Files to always show
 			},
 			git = {
 				ignore = false,
